@@ -1,0 +1,33 @@
+h2 {
+    /* color: red;
+    background-color: black; */
+    text-decoration:underline red wavy;
+
+}
+
+h1 {
+    text-align: center;
+
+    text-decoration: underline wavy;
+}
+
+p {
+    text-align: center;
+
+    font-size: 2rem;
+
+    font-weight:bolder;
+
+    font-family:'Courier New', Courier, monospace;
+
+    line-height: 2rem;
+
+    letter-spacing: 10px;
+
+}
+a{
+    text-decoration: none;
+    /* if i use none as text decoration, all 
+    decoration will be removed
+     */
+}

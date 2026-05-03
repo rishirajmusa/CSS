@@ -49,9 +49,9 @@
         line-height: 2;
     }
 
-/* 5th is attributes */
+    /* 5th is attributes */
     /* this is one way of adding  */
-    input{
+    input {
         background-color: red;
     }
 
@@ -59,17 +59,51 @@
     
     i just added type as text and 
     only the text is turning black*/
-    input[type = text]{
+    input[type=text] {
         background-color: black;
     }
 
     /* i can also say type=password */
 
-    input[type= password]{
+    input[type=password] {
         background-color: blue;
     }
 
-    
+    /* 6th is decendent    
+let's say you have some tags inside a list
+this will help adding css to that*/
+
+    ul li a {
+        background-color: red;
+    }
+
+    /* here i am saying that put css on
+anchor tag which is inside a list tag
+which is inside a unordered list tag */
+
+
+    /* 7th is hover 
+when we hover over the text
+it applies the css */
+
+    h2:hover {
+        background-color: white;
+    }
+
+    /* now the h2 heading will change the color 
+as soon as i hover over it */
+button{
+    background-color: white;
+}
+button:hover{
+    background-color: pink;
+} /* Similar is active 
+once we click on it, it applies css  */
+button:active{
+    background-color: violet;
+}
+
+
 </style>
 
 <body>
@@ -93,12 +127,27 @@
 
     <label for="name">Name</label>
     <input type="text" name="name" id="name">
-<br>
+    <br>
     <label for="Username">Username</label>
     <input type="text" name="user" id="Username">
     <br>
     <label for="password">Password</label>
     <input type="password" name="password" id="password">
+
+    <ul>
+        <li><input type="text" name="" id=""></li>
+        <li><img src="/1stClass/border.html" alt="broken link"></li>
+        <li><a href="abc.com">link</a></li>
+        <!-- let's say we have to add css on this anchor tag
+         we will use decendent property of css -->
+
+    </ul>
+
+
+    <h2>Hover</h2>
+
+    <button type="submit" id="sbt_button" name="save">Submit</button>
+
 
 
 </body>

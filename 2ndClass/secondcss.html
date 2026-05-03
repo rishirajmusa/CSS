@@ -61,12 +61,14 @@
     only the text is turning black*/
     input[type=text] {
         background-color: black;
+        color: azure;
     }
 
     /* i can also say type=password */
 
     input[type=password] {
         background-color: blue;
+        
     }
 
     /* 6th is decendent    
@@ -82,6 +84,8 @@ anchor tag which is inside a list tag
 which is inside a unordered list tag */
 
 
+
+
     /* 7th is hover 
 when we hover over the text
 it applies the css */
@@ -92,16 +96,71 @@ it applies the css */
 
     /* now the h2 heading will change the color 
 as soon as i hover over it */
-button{
-    background-color: white;
-}
-button:hover{
-    background-color: pink;
-} /* Similar is active 
+    button {
+        background-color: white;
+    }
+
+    button:hover {
+        background-color: pink;
+    }
+
+    /* 8th is active 
 once we click on it, it applies css  */
-button:active{
-    background-color: violet;
-}
+    button:active {
+        background-color: violet;
+    }
+
+    /*  9th is nth type selector*/
+    p {
+        background-color: rgb(227, 38, 146);
+        text-align: center;
+        color: white;
+        /* we have multiple p tags
+    now we can put tags on nth items */
+    }
+
+    p:nth-of-type(2n) {
+        background-color: black;
+        /* it will only turn second line
+    black */
+    }
+
+    /* 10th is checked selector */
+    /* we can apply css as soon as we check */
+
+    input[type="checkbox"]:checked+label {
+        font-size: 2rem;
+        background-color: pink;
+        border-radius: 10px;
+    }
+
+    /* Hover, nth of type, 
+ active, checked are called pseudo selectors
+ the syntex to write these is
+ selector:hover*/
+    /* first comes selector
+ then comes ":" without spaces 
+ then comes action or selection area*/
+
+
+    /* 11th is called pseudo element
+ we can apply css on elements first line, letter,
+ selection.
+ */
+ div::first-line{
+    color: blue;
+    background-color: wheat;
+ }
+ div::first-letter{
+    color: magenta;
+ }
+ div::selection{
+    color: rgb(193, 222, 0);
+ }
+ input::placeholder{
+    color: burlywood;
+ }
+
 
 
 </style>
@@ -149,7 +208,40 @@ button:active{
     <button type="submit" id="sbt_button" name="save">Submit</button>
 
 
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
 
+    <input type="checkbox" id="check">
+    <label for="check">Yes</label>
+
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe maiores, eligendi optio quasi animi
+        repellat, alias ullam veritatis dolorum vel, sequi nam iure! Maxime eligendi molestias sequi laboriosam
+        blanditiis.
+    </div>
+
+    <input type="text" placeholder="This is a placeholder">
 </body>
 
 </html>

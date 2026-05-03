@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<style>
+    /* first selector is universal selector 
+    example: */
+    * {
+        background-color: aqua;
+        /* this universal selector will change the whole pages color */
+    }
+
+    /* second selector is tag */
+    h1 {
+        background-color: black;
+        color: azure;
+        display: inline;
+        /* this will turn the background color of just these tags to black , 
+        font color to azure and display then=m inline */
+    }
+
+    /* third selector is class, example is below */
+    .box {
+        background-color: black;
+        height: 300px;
+        width: 300px;
+        font-size: 6rem
+    }
+
+    .red {
+        color: white;
+        background-color: black;
+    }
+
+    /* priority of selectors -> 
+    id > class > element > universal */
+
+    /* 4th is ID, examples are below */
+
+    #header {
+        font-size: 3rem;
+        background-color: blue;
+        letter-spacing: 1rem;
+        line-height: 2;
+    }
+</style>
+
 <body>
+
+    <header id="header">This is the Header.</header>
+    <hr>
+    <br>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <hr>
+    <br>
+
+    <div class="box"><span class="red">Hello World</span></div>
+
+    <hr>
+    <br>
     
 </body>
+
 </html>

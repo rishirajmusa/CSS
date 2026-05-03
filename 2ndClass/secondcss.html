@@ -201,6 +201,15 @@ color: red;
 /* id wins over class as well */
 
 
+/* below is a type of attribute selector
+ it looks for word in a string
+ and if matches
+ it applies css
+ syntex is "*=" */
+h6[class*="box"]{
+    color: rgb(115, 188, 42);
+}
+
 </style>
 
 <body>
@@ -216,7 +225,9 @@ color: red;
     <hr>
     <br>
 
-    <div class="box"><span class="red">Hello World</span></div>
+    <div class="box hh"><span class="red">Hello World</span></div>
+    <h6 class="boxhh">Hello World</h6>
+    <h6>random</h6>
 
     <hr>
     <br>

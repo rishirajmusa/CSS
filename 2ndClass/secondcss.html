@@ -68,7 +68,7 @@
 
     input[type=password] {
         background-color: blue;
-        
+
     }
 
     /* 6th is decendent    
@@ -147,20 +147,58 @@ once we click on it, it applies css  */
  we can apply css on elements first line, letter,
  selection.
  */
- div::first-line{
-    color: blue;
-    background-color: wheat;
- }
- div::first-letter{
-    color: magenta;
- }
- div::selection{
-    color: rgb(193, 222, 0);
- }
- input::placeholder{
-    color: burlywood;
- }
+    div::first-line {
+        color: blue;
+        background-color: wheat;
+    }
 
+    div::first-letter {
+        color: magenta;
+    }
+
+    div::selection {
+        color: rgb(193, 222, 0);
+    }
+
+    input::placeholder {
+        color: burlywood;
+    }
+
+
+    /* last is cascading 
+ browser uses this to decide which style wins when multiple rules try to change the same element*/
+/* the priority is id > class > element  */
+#Header{
+    color: brown;
+    background-color: aliceblue;
+}
+h1{
+    color: blue;
+}
+/* here the #Header wins
+because browser chooses id over element */
+
+/* I have made a button with btn class */
+.btn{
+color: rgb(239, 47, 47);
+}
+.btn{
+color: black;
+}
+/* black wins because browser chooses 
+recent css over old one */
+
+/* in below example
+i have made a p tag
+with id and class
+we will see which one wins */
+#alert{
+color: red;
+}
+.para{
+    color: black;
+}
+/* id wins over class as well */
 
 
 </style>
@@ -242,6 +280,14 @@ once we click on it, it applies css  */
     </div>
 
     <input type="text" placeholder="This is a placeholder">
+
+
+    <br>
+    <h1 id="Header">checking cascading</h1>
+
+    <br>
+    <button class="btn">Checking Cascading</button>
+    <p id="alert" class="para">Warning!</p>
 </body>
 
 </html>

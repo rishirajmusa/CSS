@@ -27,9 +27,9 @@
     /* third selector is class, example is below */
     .box {
         background-color: black;
-        height: 300px;
-        width: 300px;
-        font-size: 6rem
+        height: 100px;
+        width: 100px;
+        font-size: 2rem
     }
 
     .red {
@@ -43,11 +43,33 @@
     /* 4th is ID, examples are below */
 
     #header {
-        font-size: 3rem;
+        font-size: 2rem;
         background-color: blue;
         letter-spacing: 1rem;
         line-height: 2;
     }
+
+/* 5th is attributes */
+    /* this is one way of adding  */
+    input{
+        background-color: red;
+    }
+
+    /* second way is adding on type
+    
+    i just added type as text and 
+    only the text is turning black*/
+    input[type = text]{
+        background-color: black;
+    }
+
+    /* i can also say type=password */
+
+    input[type= password]{
+        background-color: blue;
+    }
+
+    
 </style>
 
 <body>
@@ -67,7 +89,18 @@
 
     <hr>
     <br>
-    
+
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+<br>
+    <label for="Username">Username</label>
+    <input type="text" name="user" id="Username">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+
 </body>
 
 </html>

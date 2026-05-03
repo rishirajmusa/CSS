@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* first selector is universal selector 
+    example: */
+    * {
+        background-color: aqua;
+        /* this universal selector will change the whole pages color */
+    }
+
+    /* second selector is tag */
+    h1 {
+        background-color: black;
+        color: azure;
+        display: inline;
+        /* this will turn the background color of just these tags to black , 
+        font color to azure and display then=m inline */
+    }
+
+    /* third selector is class, example is below */
+    .box {
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        font-size: 2rem
+    }
+
+    .red {
+        color: white;
+        background-color: black;
+    }
+
+    /* priority of selectors -> 
+    id > class > element > universal */
+
+    /* 4th is ID, examples are below */
+
+    #header {
+        font-size: 2rem;
+        background-color: blue;
+        letter-spacing: 1rem;
+        line-height: 2;
+    }
+
+    /* 5th is attributes */
+    /* this is one way of adding  */
+    input {
+        background-color: red;
+    }
+
+    /* second way is adding on type
+    
+    i just added type as text and 
+    only the text is turning black*/
+    input[type=text] {
+        background-color: black;
+    }
+
+    /* i can also say type=password */
+
+    input[type=password] {
+        background-color: blue;
+    }
+
+    /* 6th is decendent    
+let's say you have some tags inside a list
+this will help adding css to that*/
+
+    ul li a {
+        background-color: red;
+    }
+
+    /* here i am saying that put css on
+anchor tag which is inside a list tag
+which is inside a unordered list tag */
+
+
+    /* 7th is hover 
+when we hover over the text
+it applies the css */
+
+    h2:hover {
+        background-color: white;
+    }
+
+    /* now the h2 heading will change the color 
+as soon as i hover over it */
+button{
+    background-color: white;
+}
+button:hover{
+    background-color: pink;
+} /* Similar is active 
+once we click on it, it applies css  */
+button:active{
+    background-color: violet;
+}
+
+
+</style>
+
+<body>
+
+    <header id="header">This is the Header.</header>
+    <hr>
+    <br>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <h1>Hello</h1>
+    <hr>
+    <br>
+
+    <div class="box"><span class="red">Hello World</span></div>
+
+    <hr>
+    <br>
+
+
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="Username">Username</label>
+    <input type="text" name="user" id="Username">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+
+    <ul>
+        <li><input type="text" name="" id=""></li>
+        <li><img src="/1stClass/border.html" alt="broken link"></li>
+        <li><a href="abc.com">link</a></li>
+        <!-- let's say we have to add css on this anchor tag
+         we will use decendent property of css -->
+
+    </ul>
+
+
+    <h2>Hover</h2>
+
+    <button type="submit" id="sbt_button" name="save">Submit</button>
+
+
+
+</body>
+
+</html>

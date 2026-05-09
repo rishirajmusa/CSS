@@ -1,0 +1,75 @@
+div{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid black;
+
+    /* the border style here is solid but it can also be 
+    dashed dotted double */
+    border-style: dashed solid double dotted;
+    margin: 30px;
+    border-radius: 30%;
+    /* If we give border radius 50% the box will turn into circle */
+    text-align: center;
+    color: blue;
+    text-decoration:underline double;
+    font-size: 4rem;
+    font-family:sans-serif;
+    padding-top: 20px;
+    display: inline-block;
+    /* text-shadow: x axis y axis blur color(srgb red green blue); */
+    
+    
+    
+}
+
+div:hover{
+    box-shadow: 10px 10px 10px green;
+    /* We can apply box shadow according to x and y axis */
+    /* if we give negative x and y values */
+    /* the blur will move to 4th quadrant of graph"*/
+    box-shadow: 10px -10px 1px yellow;
+
+    /* If we give values as 0 the shadow will be on all four sides */
+    box-shadow: 0px 0px 10px red;
+    text-shadow: 2px 2px 5px gray;
+
+    
+}
+.opacity{
+    height: 100px;
+    width: 200px;
+    opacity: 0.5;
+    background-color: red;
+    font-size: 2rem;
+
+}
+span{
+    font-size: 5rem;
+    opacity: 0.5;
+}
+
+/* If we want background blur but text visible use RGB */
+
+.rgb{
+    width: 300px;
+    background-color: rgba(165, 42, 42, 0.497);
+/* here the last value in rgb decides the opacity */
+}
+
+/* We can use transition to style it like a transition */
+/* we can also increase the size of the button  */
+
+button{
+    font-size: 2rem;
+    height: 70px;
+    width: 150px;
+    opacity: 0.5;
+    transition: 0.35s;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+

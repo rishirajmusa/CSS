@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 150px;
+        width: 300px;
+        background-color: gray;
+        text-align: center;
+        text-decoration: underline dashed;
+        margin: 20px 1em 40px 2em;
+        padding: 30px;
+        box-sizing: border-box;
+        /* this is the magic line
+        if we don't write this line 
+        the box size increases because of padding
+         */
+         display: inline-block;
+        }
+
+
+    .div2{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            border: 2px solid;
+            border-radius: 50%;
+         }
+   
+         li{
+             display: inline-block;
+             /*when i did display inline
+             the bullet points disappeared
+             the reason for this is 
+             bullets require block level
+             element and when i typed inline
+             it removed those bullets */
+            }
+    
+</style>
+<body>
+    <div>1</div>
+    <div class="div2">2</div>
+    <div class="div2">3</div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>NODEJS</li>
+        <li>REACTJS</li>
+        <li>SQL</li>
+        <li>MONGODB</li>
+        <li>JAVA</li>
+        <li>C++</li>
+        <li>C</li>
+        <li>PYTHON</li>
+    </ul>
+</body>
+</html>

@@ -8,7 +8,7 @@ div{
     dashed dotted double */
     border-style: dashed solid double dotted;
     margin: 30px;
-    border-radius: 30%;
+    border-radius: 40%;
     /* If we give border radius 50% the box will turn into circle */
     text-align: center;
     color: blue;

@@ -64,10 +64,13 @@ span{
 
 button{
     font-size: 2rem;
+    color: white;
+    /* this color attribute is for changing the color of text */
+    background-color: green;
     height: 70px;
     width: 150px;
     opacity: 0.5;
-    transition: 0.35s;
+    transition: 0.5s;
 }
 
 button:hover{

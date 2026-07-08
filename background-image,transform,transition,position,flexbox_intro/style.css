@@ -1,0 +1,164 @@
+.abcd{
+
+    width: 1000px;
+    height: 100px;
+    background-image: none;
+    transform: none;
+    margin-left: 10px;
+    margin-top: 100px;
+    padding: 10%;
+    /* transform: skew(30deg);
+    transform: skew(-30deg);
+    positive value in skew means tilting left
+    and negative value means tilting right */
+    background-image: url(landscape.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+}
+
+/* .abcd:hover{
+    transform: scale(1.2);
+    border-radius: 50%;
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+} */
+
+div::selection{
+    color: red;
+}
+
+div{
+    width: 200px;
+    height: 600px;
+    border: solid black 2px;
+    background-color: skyblue;
+
+
+    background-image: url(portrait.png);
+    background-size: auto;
+    /* what auto does is it tells the browser
+    to keep the image original size */
+    background-size: contain;
+    /* contains put the image in box and then fills 
+    the remaining space with same image copy */
+    background-size: cover;
+    /* cover strecthes the image to fill
+    the space */
+
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    /* if i do this then it fills the whole image 
+    and does not let it repeat */
+
+    background-size: auto;
+    /* background-repeat: no-repeat; */
+    /* best if auto and no repeat */
+
+
+    width: 600px;
+    height: 300px;
+    background-image: url(landscape.png);
+    background-size: contain;
+
+
+background-size: cover;
+    /* now comes transform, 
+    transform has multiple functions in it
+    first is rotate
+    it rotates according to degree */
+    transform: rotate(30deg);
+    
+    /* transform also has translate
+    it move according to x and y axis */
+    transform: translate(30px, 300px);
+    /* when i did this 
+    it moved x axis in 30px size 
+    and y axis in 300px */
+
+    
+  transform: translate(50px, 100px) rotate(45deg);
+/* when i did this, it only rotated and did not
+moved the box because in transform 
+only older is applied */
+
+
+
+/* so if we want both property then below is the way */
+}
+.box{
+    margin: 220px; 
+    rotate: 45deg;
+    translate: 100px 200px;
+
+    /* if we just need y axis movement
+    or x axis movement */
+
+    translate: 0px 120px;
+    /* now x axis movement is 0 and y axis movement 
+    is 120px */
+
+    /* there is another way but it can't be 
+    used alone, it has to be used with transform*/
+
+    transform: translateY(30px);
+    transform: translateX(30px);
+    /* but only latest will work */
+
+
+
+
+    /* another one of transform property is 
+    scale */
+
+    transform: scale(1.5);
+    /* 1.5 means increase the size by 50% */
+
+
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    font-size: 2rem;
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+/*  we made buttons and on hover i added scale
+so if we hover those buttons, it will increase 
+their size by 20% */
+
+/* next property of transform is skew */
+
+/* skew changes the shape into rhombus */
+
+.box2{
+    transform: skew(40deg);
+    /* if we do -40deg the shombus tilt 
+    will change */
+    transform: skew(-40deg);
+    box-shadow: 30px 30px 40px 50px rgb(187, 187, 201) ;
+    /* syntex of box-shadow
+    box-shadow: h-offset v-offset blur spread color;
+ */
+
+
+}
+
+.box3{
+    transform: rotate(0);
+background-image: none;
+transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.box3:hover{
+    background-color: rgb(245, 255, 48);
+    border-radius: 50%;
+}
